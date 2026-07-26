@@ -1,0 +1,12 @@
+[
+  {
+    "modid": "deceptionclient",
+    "name": "Deception Client",
+    "description": "Deception Client - A powerful utility client for Minecraft 1.8.9.",
+    "version": "${version}",
+    "mcversion": "1.8.9",
+    "authorList": [
+      "Deception Team"
+    ]
+  }
+]
