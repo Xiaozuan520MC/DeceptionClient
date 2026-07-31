@@ -209,6 +209,7 @@ public class Deception {
             register(new com.easycaikuai.deceptionclient.module.modules.player.MCF());
             register(new com.easycaikuai.deceptionclient.module.modules.player.Refill());
             register(new com.easycaikuai.deceptionclient.module.modules.player.Scaffold());
+            register(new com.easycaikuai.deceptionclient.module.modules.player.Telly());
             register(new com.easycaikuai.deceptionclient.module.modules.player.SpeedMine());
             register(new com.easycaikuai.deceptionclient.module.modules.player.Stuck());
 
