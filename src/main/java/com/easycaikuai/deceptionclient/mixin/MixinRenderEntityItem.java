@@ -18,7 +18,6 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import com.easycaikuai.deceptionclient.Deception;
-import com.easycaikuai.deceptionclient.module.modules.render.ItemPhysics;
 
 import java.util.Random;
 
@@ -41,10 +40,6 @@ public abstract class MixinRenderEntityItem extends Render<EntityItem> {
      */
     @Inject(method = "doRender", at = @At("HEAD"), cancellable = true)
     public void onDoRender(EntityItem entity, double x, double y, double z, float entityYaw, float partialTicks, CallbackInfo ci) {
-        if (Deception.moduleManager.modules.get(ItemPhysics.class).isEnabled()) {
-            this.doPhysicsRender(entity, x, y, z, entityYaw, partialTicks);
-            ci.cancel();
-        }
     }
 
     // 将你代码中的 physicsRender 逻辑迁移到这里
@@ -78,8 +73,7 @@ public abstract class MixinRenderEntityItem extends Render<EntityItem> {
         GlStateManager.rotate(90.0F, 1.0F, 0.0F, 0.0F);
         GlStateManager.rotate(entity.rotationYaw, 0.0F, 0.0F, 1.0F);
 
-        if (!entity.onGround) {
-            entity.rotationPitch +=  (((IAccessorMinecraft)mc).getTimer().renderPartialTicks) * ItemPhysics.rollSpeed.getValue(); // 这里需要注意，直接改实体的 rotationPitch 可能会同步到服务端或影响其他逻辑
+        if (!entity.onGround) { 
         } else {
             entity.rotationPitch = 0;
         }

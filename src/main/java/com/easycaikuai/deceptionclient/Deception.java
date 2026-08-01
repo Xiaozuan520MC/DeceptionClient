@@ -120,20 +120,17 @@ public class Deception {
         try {
             register(new com.easycaikuai.deceptionclient.module.modules.combat.AimAssist());
             register(new com.easycaikuai.deceptionclient.module.modules.combat.AntiFireball());
+            register(new com.easycaikuai.deceptionclient.module.modules.combat.AutoBlock());
             register(new com.easycaikuai.deceptionclient.module.modules.combat.AutoClicker());
             register(new com.easycaikuai.deceptionclient.module.modules.combat.AutoLava());
-            register(new com.easycaikuai.deceptionclient.module.modules.combat.AutoProjectiles());
             register(new com.easycaikuai.deceptionclient.module.modules.combat.BackTrack());
             register(new com.easycaikuai.deceptionclient.module.modules.combat.BlockHit());
-            register(new com.easycaikuai.deceptionclient.module.modules.combat.Criticals());
             register(new com.easycaikuai.deceptionclient.module.modules.combat.HitBox());
             register(new com.easycaikuai.deceptionclient.module.modules.combat.JumpReset());
             try { register(new com.easycaikuai.deceptionclient.module.modules.combat.KillAura()); } catch (Exception e) {}
             register(new com.easycaikuai.deceptionclient.module.modules.combat.LagRange());
             register(new com.easycaikuai.deceptionclient.module.modules.combat.MoreKB());
-            register(new com.easycaikuai.deceptionclient.module.modules.combat.NoHitDelay());
             register(new com.easycaikuai.deceptionclient.module.modules.combat.Reach());
-            register(new com.easycaikuai.deceptionclient.module.modules.combat.SprintReset());
             register(new com.easycaikuai.deceptionclient.module.modules.combat.TargetStrafe());
             register(new com.easycaikuai.deceptionclient.module.modules.combat.Timer());
             register(new com.easycaikuai.deceptionclient.module.modules.combat.TickBase());
@@ -167,11 +164,8 @@ public class Deception {
             register(new com.easycaikuai.deceptionclient.module.modules.render.FullBright());
             register(new com.easycaikuai.deceptionclient.module.modules.render.GuiModule());
             register(new com.easycaikuai.deceptionclient.module.modules.render.HUD());
-            register(new com.easycaikuai.deceptionclient.module.modules.render.Icon());
             register(new com.easycaikuai.deceptionclient.module.modules.render.Indicators());
-            register(new com.easycaikuai.deceptionclient.module.modules.render.Island());
             register(new com.easycaikuai.deceptionclient.module.modules.render.ItemESP());
-            register(new com.easycaikuai.deceptionclient.module.modules.render.ItemPhysics());
             register(new com.easycaikuai.deceptionclient.module.modules.render.KillEffect());
             register(new com.easycaikuai.deceptionclient.module.modules.render.NameTags());
             register(new com.easycaikuai.deceptionclient.module.modules.render.NoHurtCam());
@@ -187,13 +181,11 @@ public class Deception {
             register(new com.easycaikuai.deceptionclient.module.modules.render.WaterMark());
             register(new com.easycaikuai.deceptionclient.module.modules.render.Xray());
             register(new com.easycaikuai.deceptionclient.module.modules.render.BetterFps());
-            register(new com.easycaikuai.deceptionclient.module.modules.render.GifDisplay());
             register(new com.easycaikuai.deceptionclient.module.modules.render.MotionBlur());
             register(new com.easycaikuai.deceptionclient.module.modules.render.BindGUI());
 
             register(new com.easycaikuai.deceptionclient.module.modules.player.AntiDebuff());
             register(new com.easycaikuai.deceptionclient.module.modules.player.AutoBlockIn());
-            try { register(new com.easycaikuai.deceptionclient.module.modules.combat.AutoGapple()); } catch (Exception e) {}
             register(new com.easycaikuai.deceptionclient.module.modules.player.AutoHeal());
             register(new com.easycaikuai.deceptionclient.module.modules.player.AutoSwap());
             register(new com.easycaikuai.deceptionclient.module.modules.player.AntiBot());
@@ -204,9 +196,6 @@ public class Deception {
             register(new com.easycaikuai.deceptionclient.module.modules.player.FastPlace());
             register(new com.easycaikuai.deceptionclient.module.modules.player.GhostHand());
             register(new com.easycaikuai.deceptionclient.module.modules.player.InvManager());
-            register(new com.easycaikuai.deceptionclient.module.modules.player.InvWalk());
-            register(new com.easycaikuai.deceptionclient.module.modules.player.LegitScaffold());
-            register(new com.easycaikuai.deceptionclient.module.modules.player.MCF());
             register(new com.easycaikuai.deceptionclient.module.modules.player.Refill());
             register(new com.easycaikuai.deceptionclient.module.modules.player.Scaffold());
             register(new com.easycaikuai.deceptionclient.module.modules.player.Telly());
@@ -222,7 +211,6 @@ public class Deception {
             register(new com.easycaikuai.deceptionclient.module.modules.misc.Displace());
             register(new com.easycaikuai.deceptionclient.module.modules.misc.FakeLag());
             register(new com.easycaikuai.deceptionclient.module.modules.misc.FlagDetector());
-            register(new com.easycaikuai.deceptionclient.module.modules.misc.KillSound());
             register(new com.easycaikuai.deceptionclient.module.modules.misc.LightningTracker());
             register(new com.easycaikuai.deceptionclient.module.modules.misc.NickHider());
             register(new com.easycaikuai.deceptionclient.module.modules.misc.NoRotate());

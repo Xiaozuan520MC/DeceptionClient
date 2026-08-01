@@ -20,7 +20,6 @@ import com.easycaikuai.deceptionclient.event.EventManager;
 import com.easycaikuai.deceptionclient.event.types.EventType;
 import com.easycaikuai.deceptionclient.events.*;
 import com.easycaikuai.deceptionclient.init.Initializer;
-import com.easycaikuai.deceptionclient.module.modules.combat.NoHitDelay;
 
 @SideOnly(Side.CLIENT)
 @Mixin({Minecraft.class})
@@ -93,9 +92,6 @@ public abstract class MixinMinecraft {
             cancellable = true
     )
     private void clickMouse(CallbackInfo callbackInfo) {
-        if (Deception.moduleManager != null && Deception.moduleManager.modules.get(NoHitDelay.class).isEnabled()) {
-            this.leftClickCounter = 0;
-        }
         LeftClickMouseEvent event = new LeftClickMouseEvent();
         EventManager.call(event);
         if (event.isCancelled()) {
