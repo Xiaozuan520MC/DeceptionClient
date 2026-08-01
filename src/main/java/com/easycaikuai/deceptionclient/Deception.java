@@ -120,7 +120,6 @@ public class Deception {
         try {
             register(new com.easycaikuai.deceptionclient.module.modules.combat.AimAssist());
             register(new com.easycaikuai.deceptionclient.module.modules.combat.AntiFireball());
-            register(new com.easycaikuai.deceptionclient.module.modules.combat.AutoBlock());
             register(new com.easycaikuai.deceptionclient.module.modules.combat.AutoClicker());
             register(new com.easycaikuai.deceptionclient.module.modules.combat.AutoLava());
             register(new com.easycaikuai.deceptionclient.module.modules.combat.BackTrack());
